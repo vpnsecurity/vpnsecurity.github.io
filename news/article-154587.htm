@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnsecurity.github.io/news/article-154587.htm" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧</title>
+        <meta name="description" content="在当今这个数字鸿沟与信息壁垒并存的时代，获取全球信息、自由浏览互联网已不再只是“技术极客”的专利。越来越多的普通用户也开始关注科学上网这一概念。作为其中的重要工具，Shadowsocks（简称SS）客" />
+        <link rel="icon" href="/assets/website/img/trojannode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN安全免费订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnsecurity.github.io/news/article-154587.htm" />
+    <meta property="og:site_name" content="VPN安全免费订阅中文网" />
+    <meta property="og:title" content="SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧" />
+    <meta property="og:image" content="https://vpnsecurity.github.io/uploads/20240807/51b7f1f08e1a228fb27e11ded22d1e42.webp" />
+        <meta property="og:release_date" content="2025-09-10T10:02:09" />
+    <meta property="og:updated_time" content="2025-09-10T10:02:09" />
+        <meta property="og:description" content="在当今这个数字鸿沟与信息壁垒并存的时代，获取全球信息、自由浏览互联网已不再只是“技术极客”的专利。越来越多的普通用户也开始关注科学上网这一概念。作为其中的重要工具，Shadowsocks（简称SS）客" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/website/js/frontend/trojannode/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/trojannode/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/trojannode/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/trojannode/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/trojannode/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/trojannode/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/website/css/trojannode/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-783H7HSNPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-783H7HSNPH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="/">
+                        <span class="logo">VPN安全</span>
+                        </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                                        <li><a class="nav-link" href="/">首页</a></li>
+                                        <li><a class="nav-link" href="/free-nodes/">免费节点</a></li>
+                                        <li><a class="nav-link" href="/paid-subscribe/">推荐机场</a></li>
+                                        <li><a class="nav-link" href="/news/">新闻资讯</a></li>
+                                        <li><a class="nav-link" href="/client.htm">客户端</a></li>
+                                    </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧</h2>
+                    <ol>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/news/">新闻资讯</a></li>
+                        <li>正文</li>
+                    </ol>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="TrojanNode免费节点官网" data-url="https://trojannode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="32" data-end="219">在当今这个数字鸿沟与信息壁垒并存的时代，获取全球信息、自由浏览互联网已不再只是“技术极客”的专利。越来越多的普通用户也开始关注<strong data-start="95" data-end="103">科学上网</strong>这一概念。作为其中的重要工具，<strong data-start="118" data-end="142">Shadowsocks（简称SS）客户端</strong>因其轻量、高效和配置自由度高的特性，在全球范围内被广泛使用。对于想要摆脱网络封锁、自由访问被屏蔽内容的用户来说，学会如何使用SS客户端无疑是一项必备技能。</p>
+<p data-start="221" data-end="305">本篇博客将带你系统了解SS客户端的<strong data-start="238" data-end="265">下载、安装、配置、使用技巧以及常见问题处理方案</strong>，无论你是初次接触，还是遇到连接问题的“半路出家者”，都能在此找到你所需的答案。</p>
+<hr data-start="307" data-end="310">
+<h2 data-start="312" data-end="333">什么是SS客户端？为什么我们需要它？</h2>
+<p data-start="335" data-end="461">SS客户端是基于Shadowsocks协议的一种代理软件，它通过加密方式，将用户的网络请求传递到境外服务器，再由该服务器代为访问目标网站并返回内容。其运行机制类似于VPN，但区别在于SS更轻量、稳定、隐蔽性强，尤其适用于被审查或封锁较为严重的网络环境。</p>
+<p data-start="463" data-end="478">使用SS客户端的主要优势包括：</p>
+<ul data-start="479" data-end="632">
+<li data-start="479" data-end="521">
+<p data-start="481" data-end="521"><strong data-start="481" data-end="489">突破封锁</strong>：访问被墙的网站如Google、YouTube、Twitter等</p>
+</li>
+<li data-start="522" data-end="550">
+<p data-start="524" data-end="550"><strong data-start="524" data-end="532">保障隐私</strong>：通过加密传输，避免流量被第三方窥探</p>
+</li>
+<li data-start="551" data-end="579">
+<p data-start="553" data-end="579"><strong data-start="553" data-end="564">低延迟高速连接</strong>：对流媒体和实时通讯有更好支持</p>
+</li>
+<li data-start="580" data-end="632">
+<p data-start="582" data-end="632"><strong data-start="582" data-end="593">跨平台兼容性强</strong>：支持Windows、macOS、Android、iOS、Linux等多个平台</p>
+</li>
+</ul>
+<hr data-start="634" data-end="637">
+<h2 data-start="639" data-end="661">如何下载SS客户端？各平台获取方式一览</h2>
+<h3 data-start="663" data-end="679">1. Windows系统</h3>
+<ul data-start="680" data-end="786">
+<li data-start="680" data-end="724">
+<p data-start="682" data-end="724">推荐从开源项目官网如GitHub获取（例如Shadowsocks-Windows）。</p>
+</li>
+<li data-start="725" data-end="757">
+<p data-start="727" data-end="757">也可以通过一些第三方的技术博客或论坛获取汉化版或便捷安装包。</p>
+</li>
+<li data-start="758" data-end="786">
+<p data-start="760" data-end="786">注意区分32位和64位系统版本，避免下载不兼容版本。</p>
+</li>
+</ul>
+<h3 data-start="788" data-end="802">2. macOS系统</h3>
+<ul data-start="803" data-end="876">
+<li data-start="803" data-end="842">
+<p data-start="805" data-end="842">可通过ShadowsocksX-NG等Mac专属项目在GitHub上获取。</p>
+</li>
+<li data-start="843" data-end="876">
+<p data-start="845" data-end="876">下载<code data-start="847" data-end="853">.dmg</code>安装文件，确保其来自可信源，避免潜在恶意软件。</p>
+</li>
+</ul>
+<h3 data-start="878" data-end="894">3. Android系统</h3>
+<ul data-start="895" data-end="990">
+<li data-start="895" data-end="948">
+<p data-start="897" data-end="948">直接在Google Play搜索“Shadowsocks”，或在Github上下载<code data-start="938" data-end="944">.apk</code>安装包。</p>
+</li>
+<li data-start="949" data-end="990">
+<p data-start="951" data-end="990">对于中国大陆用户，可通过酷安等平台下载国内优化版本如ShadowsocksR。</p>
+</li>
+</ul>
+<h3 data-start="992" data-end="1004">4. iOS系统</h3>
+<ul data-start="1005" data-end="1114">
+<li data-start="1005" data-end="1082">
+<p data-start="1007" data-end="1082">可在App Store中搜索“Shadowrocket”、“Potatso Lite”等兼容SS协议的客户端（需付费或通过TestFlight安装）。</p>
+</li>
+<li data-start="1083" data-end="1114">
+<p data-start="1085" data-end="1114">大多数SS工具无需越狱即可使用，合法合规前提下操作风险小。</p>
+</li>
+</ul>
+<hr data-start="1116" data-end="1119">
+<h2 data-start="1121" data-end="1135">SS客户端安装步骤详解</h2>
+<h3 data-start="1137" data-end="1151">Windows端安装</h3>
+<ol data-start="1152" data-end="1239">
+<li data-start="1152" data-end="1174">
+<p data-start="1155" data-end="1174">解压下载的安装包（一般为ZIP格式）。</p>
+</li>
+<li data-start="1175" data-end="1206">
+<p data-start="1178" data-end="1206">运行 <code data-start="1181" data-end="1187">.exe</code> 文件，首次使用无需安装，可直接启动。</p>
+</li>
+<li data-start="1207" data-end="1239">
+<p data-start="1210" data-end="1239">如果系统提示防火墙或权限申请，选择允许或以管理员身份运行。</p>
+</li>
+</ol>
+<h3 data-start="1241" data-end="1253">macOS端安装</h3>
+<ol data-start="1254" data-end="1336">
+<li data-start="1254" data-end="1274">
+<p data-start="1257" data-end="1274">打开下载好的 <code data-start="1264" data-end="1270">.dmg</code> 文件。</p>
+</li>
+<li data-start="1275" data-end="1305">
+<p data-start="1278" data-end="1305">将Shadowsocks图标拖入“应用程序”文件夹中。</p>
+</li>
+<li data-start="1306" data-end="1336">
+<p data-start="1309" data-end="1336">第一次运行需在“系统偏好设置 → 安全与隐私”中授权。</p>
+</li>
+</ol>
+<h3 data-start="1338" data-end="1352">Android端安装</h3>
+<ol data-start="1353" data-end="1416">
+<li data-start="1353" data-end="1387">
+<p data-start="1356" data-end="1387">若非通过官方商店下载，需先开启“允许安装来自未知来源的应用”。</p>
+</li>
+<li data-start="1388" data-end="1416">
+<p data-start="1391" data-end="1416">安装后打开应用，点击右上角“+”号添加服务器信息。</p>
+</li>
+</ol>
+<h3 data-start="1418" data-end="1428">iOS端安装</h3>
+<ol data-start="1429" data-end="1486">
+<li data-start="1429" data-end="1464">
+<p data-start="1432" data-end="1464">从App Store下载并安装后，首次打开需授予VPN连接权限。</p>
+</li>
+<li data-start="1465" data-end="1486">
+<p data-start="1468" data-end="1486">进入配置界面，按步骤填写服务器信息。</p>
+</li>
+</ol>
+<hr data-start="1488" data-end="1491">
+<h2 data-start="1493" data-end="1516">如何配置SS客户端：从新手到进阶一步步来</h2>
+<h3 data-start="1518" data-end="1534">1. 获取服务器配置信息</h3>
+<p data-start="1535" data-end="1558">通常这些信息由节点提供者（如机场）提供，包括：</p>
+<ul data-start="1559" data-end="1616">
+<li data-start="1559" data-end="1573">
+<p data-start="1561" data-end="1573">服务器地址（IP或域名）</p>
+</li>
+<li data-start="1574" data-end="1579">
+<p data-start="1576" data-end="1579">端口号</p>
+</li>
+<li data-start="1580" data-end="1600">
+<p data-start="1582" data-end="1600">加密方式（如aes-256-gcm）</p>
+</li>
+<li data-start="1601" data-end="1605">
+<p data-start="1603" data-end="1605">密码</p>
+</li>
+<li data-start="1606" data-end="1616">
+<p data-start="1608" data-end="1616">协议插件（如有）</p>
+</li>
+</ul>
+<h3 data-start="1618" data-end="1632">2. 添加服务器配置</h3>
+<h4 data-start="1633" data-end="1654">Windows/macOS客户端</h4>
+<ul data-start="1655" data-end="1733">
+<li data-start="1655" data-end="1686">
+<p data-start="1657" data-end="1686">启动客户端后点击“添加”或右键托盘图标选择“服务器设置”。</p>
+</li>
+<li data-start="1687" data-end="1708">
+<p data-start="1689" data-end="1708">粘贴提供的信息，保存并设为默认服务器。</p>
+</li>
+<li data-start="1709" data-end="1733">
+<p data-start="1711" data-end="1733">启用“启用系统代理”后即可让全局浏览器生效。</p>
+</li>
+</ul>
+<h4 data-start="1735" data-end="1754">Android/iOS客户端</h4>
+<ul data-start="1755" data-end="1835">
+<li data-start="1755" data-end="1784">
+<p data-start="1757" data-end="1784">点击“添加配置” → 手动输入服务器信息或扫描二维码。</p>
+</li>
+<li data-start="1785" data-end="1811">
+<p data-start="1787" data-end="1811">设置连接模式（全局/绕过局域网/绕过大陆地址）。</p>
+</li>
+<li data-start="1812" data-end="1835">
+<p data-start="1814" data-end="1835">启动服务后，通知栏会显示VPN已连接标志。</p>
+</li>
+</ul>
+<hr data-start="1837" data-end="1840">
+<h2 data-start="1842" data-end="1854">高级设置与优化技巧</h2>
+<h3 data-start="1856" data-end="1871">1. 合理设置路由规则</h3>
+<p data-start="1872" data-end="1912">使用“绕过大陆与局域网地址”模式，避免国内常用服务也走代理，减少延迟并节省流量。</p>
+<h3 data-start="1914" data-end="1928">2. DNS设置优化</h3>
+<ul data-start="1929" data-end="1997">
+<li data-start="1929" data-end="1975">
+<p data-start="1931" data-end="1975">建议开启“远程DNS解析”或使用公共DNS如 <code data-start="1954" data-end="1963">8.8.8.8</code>, <code data-start="1965" data-end="1974">1.1.1.1</code>。</p>
+</li>
+<li data-start="1976" data-end="1997">
+<p data-start="1978" data-end="1997">防止DNS污染或泄漏，提高访问成功率。</p>
+</li>
+</ul>
+<h3 data-start="1999" data-end="2015">3. 自动连接与守护进程</h3>
+<p data-start="2016" data-end="2060">在客户端中设置“开机自启”、“自动重连”，尤其适用于长期使用的用户，省去手动开关的麻烦。</p>
+<h3 data-start="2062" data-end="2079">4. 使用订阅链接管理节点</h3>
+<p data-start="2080" data-end="2121">多个机场支持通过订阅链接自动更新节点配置，在客户端中定期刷新即可获取最新可用节点。</p>
+<hr data-start="2123" data-end="2126">
+<h2 data-start="2128" data-end="2142">常见问题解答与应对建议</h2>
+<p data-start="2144" data-end="2200"><strong data-start="2144" data-end="2163">Q1：连接成功但无法访问外网？</strong><br data-start="2163" data-end="2166">
+A：检查是否启用了系统代理，确认规则设置无误；尝试更换DNS服务器。</p>
+<p data-start="2202" data-end="2264"><strong data-start="2202" data-end="2220">Q2：客户端频繁掉线怎么办？</strong><br data-start="2220" data-end="2223">
+A：可能是网络不稳定，建议切换到更接近你地理位置的服务器节点；或开启自动重连功能。</p>
+<p data-start="2266" data-end="2321"><strong data-start="2266" data-end="2287">Q3：不同客户端显示连接状态不同？</strong><br data-start="2287" data-end="2290">
+A：建议统一使用主流开源客户端，某些第三方改版可能协议不一致。</p>
+<p data-start="2323" data-end="2392"><strong data-start="2323" data-end="2351">Q4：为什么测速显示速度很快但访问网页仍然卡顿？</strong><br data-start="2351" data-end="2354">
+A：可能是DNS解析出错或走了错误的路由路径，调整“分流模式”或换节点测试。</p>
+<p data-start="2394" data-end="2458"><strong data-start="2394" data-end="2413">Q5：是否需要配合VPN使用？</strong><br data-start="2413" data-end="2416">
+A：SS本身已具备加密传输能力，但在隐私需求更高的场景下，可搭配VPN多重加密使用。</p>
+<hr data-start="2460" data-end="2463">
+<h2 data-start="2465" data-end="2485">结语：科学上网的意义不仅是“翻墙”</h2>
+<p data-start="2487" data-end="2590">学会使用SS客户端，不只是为了访问被屏蔽的网站，更是一种数字公民对信息自由的渴望与追求。SS客户端的魅力在于它的简洁与强大，门槛虽不高，但操作却涉及网络配置、加密技术等细节——<strong data-start="2575" data-end="2590">这既是挑战，也是乐趣。</strong></p>
+<blockquote data-start="2592" data-end="2758">
+<p data-start="2594" data-end="2758"><strong data-start="2594" data-end="2603">精彩点评：</strong><br data-start="2603" data-end="2606">
+科学上网并非一种“逃逸”，它更像是一种回归——回归到互联网最初“开放、共享、无国界”的本意。而SS客户端，正是这个愿景下的小小引擎，轻巧却强劲，低调却深远。如果你愿意多理解它一点，它便能还你一个更广阔的信息世界。真正的科技，不是神秘的黑科技，而是你手边这一个“点开、连上”的过程——简单、实用、自由。</p>
+</blockquote>
+<p data-start="2760" data-end="2797" data-is-last-node="" data-is-only-node="">愿这篇文章能帮助你从“入门”走向“精通”，在网络世界中穿云破雾，畅行无阻。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-154221.htm">解密V2Ray：从网络代理工具到数字自由的钥匙——深度解析与实战指南</a></p>
+                                        <p>下一个：<a href="/news/article-154954.htm">手机V2Ray全面指南：从零开始掌握安全代理技术</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-8-6-free-v2ray.htm" title="麦Clash - 8月6日18.3M/S|免费Clash/Shadowrocket/SSR/V2ray节点推荐，Clash机场购买推荐">麦Clash - 8月6日18.3M/S|免费Clash/Shadowrocket/SSR/V2ray节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/news/article-154954.htm" title="手机V2Ray全面指南：从零开始掌握安全代理技术">手机V2Ray全面指南：从零开始掌握安全代理技术</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-13-free-vpn.htm" title="VPN安全 | 9月13日22.9M/S|免费Shadowrocket/Clash/V2ray/SSR订阅节点机场">VPN安全 | 9月13日22.9M/S|免费Shadowrocket/Clash/V2ray/SSR订阅节点机场</a></li>
+                        <li class="py-2"><a href="/news/article-152397.htm" title="全面指南：使用v2rayng实现手机热点分享，畅享安全网络体验">全面指南：使用v2rayng实现手机热点分享，畅享安全网络体验</a></li>
+                        <li class="py-2"><a href="/news/article-149726.htm" title="冲突的艺术：深度解析如何在英语中精准运用"clash"一词">冲突的艺术：深度解析如何在英语中精准运用"clash"一词</a></li>
+                        <li class="py-2"><a href="/news/article-154587.htm" title="SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧">SS客户端完整使用指南：一站式搞定科学上网配置与优化技巧</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-7-free-v2ray-subscribe.htm" title="麦Clash - 8月7日22.6M/S|免费V2ray/Shadowrocket/SSR/Clash节点推荐，Clash机场购买推荐">麦Clash - 8月7日22.6M/S|免费V2ray/Shadowrocket/SSR/Clash节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-17-free-v2ray.htm" title="麦Clash - 8月17日19.8M/S|免费Shadowrocket/Clash/SSR/V2ray节点推荐，Clash机场购买推荐">麦Clash - 8月17日19.8M/S|免费Shadowrocket/Clash/SSR/V2ray节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-20-node-share.htm" title="麦Clash - 8月20日19.5M/S|免费Shadowrocket/V2ray/SSR/Clash节点推荐，Clash机场购买推荐">麦Clash - 8月20日19.5M/S|免费Shadowrocket/V2ray/SSR/Clash节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-18-free-node-subscribe.htm" title="麦Clash - 8月18日20.3M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，Clash机场购买推荐">麦Clash - 8月18日20.3M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，Clash机场购买推荐</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+    </main><!-- End #main -->
+        <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">VPN安全免费订阅中文网</a> 版权所有 Powered by WordPress
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="/assets/website/js/frontend/trojannode/jquery-1.9.1.min.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/php-email-form/validate.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/purecounter/purecounter.js"></script>
+    <script src="/assets/website/js/frontend/trojannode/swiper/swiper-bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/website/js/frontend/trojannode/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
