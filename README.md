@@ -1,4 +1,4 @@
-# VPN安全 | 6月22日18.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点机场  更新时间 2026-06-22 08:28:28
+# VPN安全 | 6月29日20.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点机场  更新时间 2026-06-29 08:56:04
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnsecurity.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnsecurity.github.io/uploads/2026/06/0-20260622.yaml
-- https://vpnsecurity.github.io/uploads/2026/06/1-20260622.yaml
-- https://vpnsecurity.github.io/uploads/2026/06/2-20260622.yaml
-- https://vpnsecurity.github.io/uploads/2026/06/3-20260622.yaml
-- https://vpnsecurity.github.io/uploads/2026/06/4-20260622.yaml
+- https://vpnsecurity.github.io/uploads/2026/06/0-20260629.yaml
+- https://vpnsecurity.github.io/uploads/2026/06/1-20260629.yaml
+- https://vpnsecurity.github.io/uploads/2026/06/2-20260629.yaml
+- https://vpnsecurity.github.io/uploads/2026/06/3-20260629.yaml
+- https://vpnsecurity.github.io/uploads/2026/06/4-20260629.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnsecurity.github.io/uploads/2026/06/0-20260622.txt
-- https://vpnsecurity.github.io/uploads/2026/06/1-20260622.txt
-- https://vpnsecurity.github.io/uploads/2026/06/2-20260622.txt
-- https://vpnsecurity.github.io/uploads/2026/06/3-20260622.txt
-- https://vpnsecurity.github.io/uploads/2026/06/4-20260622.txt
+- https://vpnsecurity.github.io/uploads/2026/06/0-20260629.txt
+- https://vpnsecurity.github.io/uploads/2026/06/1-20260629.txt
+- https://vpnsecurity.github.io/uploads/2026/06/2-20260629.txt
+- https://vpnsecurity.github.io/uploads/2026/06/3-20260629.txt
+- https://vpnsecurity.github.io/uploads/2026/06/4-20260629.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnsecurity.github.io/uploads/2026/06/20260622.json
+- https://vpnsecurity.github.io/uploads/2026/06/20260629.json
 
 ## 更多Clash节点订阅 ：
 
