@@ -134,8 +134,34 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-10-4-vpn-proxy.htm">VPN安全 | 10月4日21.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅节点机场</a></p>
+        <p>下一个：<a href="/free-nodes/2026-10-6-node-share.htm">VPN安全 | 10月6日22.3M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点机场</a></p>
     </div>
 <h4>FAQ</h4>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 的 TLS 选项何时使用最合适？</h5></div>
+    <div class="panel-body">
+        TLS 可提供加密和伪装，适合在高封锁或不稳定网络环境使用。结合域名伪装和证书，可让流量看起来像普通 HTTPS 请求，提升抗封锁能力和隐蔽性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 是否还值得使用？</h5></div>
+    <div class="panel-body">
+        虽然 SSR 的开发早已停止，但由于它配置简单且部分节点仍然兼容，仍有一定使用场景。不过建议用户逐步迁移到更安全的新协议如 VLESS 或 Trojan，以获得更佳性能与隐蔽性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 的伪装域名为什么重要？</h5></div>
+    <div class="panel-body">
+        伪装域名必须真实可访问且证书有效，以使流量看起来像普通 HTTPS 请求。正确配置可以降低被封锁和 DPI 检测风险，提高节点安全性和长期可用性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
+    <div class="panel-body">
+        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的 UDP 转发如何配置？</h5></div>
+    <div class="panel-body">
+        Netch 可在客户端设置 UDP 转发开关，选择需要代理的 UDP 流量端口或应用。适用于游戏、语音或实时视频，确保这些应用在代理环境下低延迟且稳定。<hr />    </div>
+</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆方式如何选择最合适？</h5></div>
     <div class="panel-body">
@@ -147,9 +173,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         SSR 的 UDP 转发需要服务端和客户端同时开启，同时确保服务器防火墙允许 UDP 通信。UDP 流量不可靠，可能在高丢包网络中导致连接中断，需要测试稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 WebSocket + TLS 配置有哪些好处？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 协议的主要特点是什么？</h5></div>
     <div class="panel-body">
-        WebSocket + TLS 可伪装为普通 HTTPS 流量，增强抗封锁能力和隐蔽性。结合域名伪装和策略组使用，可以在高封锁网络中保持稳定、高速和安全的网络访问体验。<hr />    </div>
+        Hysteria2 是新一代基于 QUIC 的高速代理协议，支持自适应拥塞控制和零 RTT 连接。相比传统 TCP 协议，它能在高延迟或丢包环境下保持稳定速度，特别适合跨境访问或实时传输场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议如何配置优化抗封锁？</h5></div>
@@ -157,34 +183,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         SSR 可通过选择合适协议、混淆方式和端口来降低被检测风险。合理配置可增强节点隐蔽性，提高长期稳定性，确保科学上网体验顺畅且可靠。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 TLS 选项何时使用最合适？</h5></div>
+    <div class="panel-heading"><h5>VMess 的 WebSocket + TLS 配置有哪些好处？</h5></div>
     <div class="panel-body">
-        TLS 可提供加密和伪装，适合在高封锁或不稳定网络环境使用。结合域名伪装和证书，可让流量看起来像普通 HTTPS 请求，提升抗封锁能力和隐蔽性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 协议的主要特点是什么？</h5></div>
-    <div class="panel-body">
-        Hysteria2 是新一代基于 QUIC 的高速代理协议，支持自适应拥塞控制和零 RTT 连接。相比传统 TCP 协议，它能在高延迟或丢包环境下保持稳定速度，特别适合跨境访问或实时传输场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名为什么重要？</h5></div>
-    <div class="panel-body">
-        伪装域名必须真实可访问且证书有效，以使流量看起来像普通 HTTPS 请求。正确配置可以降低被封锁和 DPI 检测风险，提高节点安全性和长期可用性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 UDP 转发如何配置？</h5></div>
-    <div class="panel-body">
-        Netch 可在客户端设置 UDP 转发开关，选择需要代理的 UDP 流量端口或应用。适用于游戏、语音或实时视频，确保这些应用在代理环境下低延迟且稳定。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 是否还值得使用？</h5></div>
-    <div class="panel-body">
-        虽然 SSR 的开发早已停止，但由于它配置简单且部分节点仍然兼容，仍有一定使用场景。不过建议用户逐步迁移到更安全的新协议如 VLESS 或 Trojan，以获得更佳性能与隐蔽性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
-    <div class="panel-body">
-        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。    </div>
+        WebSocket + TLS 可伪装为普通 HTTPS 流量，增强抗封锁能力和隐蔽性。结合域名伪装和策略组使用，可以在高封锁网络中保持稳定、高速和安全的网络访问体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -232,16 +233,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-24-free-node-subscribe.htm" title="VPN安全 | 9月24日22.6M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅节点机场">VPN安全 | 9月24日22.6M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-free-node-subscribe.htm" title="VPN安全 | 9月4日22.4M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点订阅节点机场">VPN安全 | 9月4日22.4M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-7.htm" title="VPN安全 | 9月7日22.1M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点机场">VPN安全 | 9月7日22.1M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-free-vpn-node.htm" title="VPN安全 | 9月2日23M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点机场">VPN安全 | 9月2日23M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-9-25.htm" title="VPN安全 | 9月25日19.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点机场">VPN安全 | 9月25日19.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-11.htm" title="VPN安全 | 9月11日22.1M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点机场">VPN安全 | 9月11日22.1M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-15.htm" title="VPN安全 | 9月15日22.7M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点机场">VPN安全 | 9月15日22.7M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-27.htm" title="VPN安全 | 9月27日21.8M/S|免费Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点机场">VPN安全 | 9月27日21.8M/S|免费Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-13.htm" title="VPN安全 | 9月13日18.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点机场">VPN安全 | 9月13日18.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-9-9.htm" title="VPN安全 | 9月9日21.2M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点机场">VPN安全 | 9月9日21.2M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-5.htm" title="VPN安全 | 9月5日19.5M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点订阅节点机场">VPN安全 | 9月5日19.5M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-node-share.htm" title="VPN安全 | 10月6日22.3M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点机场">VPN安全 | 10月6日22.3M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-vpn-free.htm" title="VPN安全 | 9月12日20.1M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点机场">VPN安全 | 9月12日20.1M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-7.htm" title="VPN安全 | 10月7日21.6M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点机场">VPN安全 | 10月7日21.6M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-top-vpn-node.htm" title="VPN安全 | 10月2日20.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点订阅节点机场">VPN安全 | 10月2日20.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点订阅节点机场</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-26-free-vpn-node.htm" title="VPN安全 | 9月26日21.5M/S|免费V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点机场">VPN安全 | 9月26日21.5M/S|免费V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-vpn-proxy.htm" title="VPN安全 | 10月4日21.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅节点机场">VPN安全 | 10月4日21.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-15.htm" title="VPN安全 | 9月15日22.7M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点机场">VPN安全 | 9月15日22.7M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-9-21.htm" title="VPN安全 | 9月21日18.2M/S|免费Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点订阅节点机场">VPN安全 | 9月21日18.2M/S|免费Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点订阅节点机场</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -253,7 +254,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
